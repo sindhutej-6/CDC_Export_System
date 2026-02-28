@@ -6,7 +6,7 @@ Watermarking synchronization strategy.
 
 ------------------------------------------------------------------------
 
-## 🛠 Features
+## Features
 
 -   **Incremental CDC Logic**: Only exports new or updated records since
     the last sync.
@@ -20,16 +20,16 @@ Watermarking synchronization strategy.
 
 ------------------------------------------------------------------------
 
-## 🚀 Getting Started
+## Getting Started
 
-### 1️⃣ Clone the Repository
+### 1️ Clone the Repository
 
 ``` bash
 git clone https://github.com/sindhutej-6/CDC_Export_System
 cd CDC_Export_System
 ```
 
-### 2️⃣ Environment Configuration
+### 2️ Environment Configuration
 
 Create a `.env` file from the provided example:
 
@@ -37,7 +37,7 @@ Create a `.env` file from the provided example:
 cp .env.example .env
 ```
 
-### 3️⃣ Launch the Application
+### 3️ Launch the Application
 
 Start the API and Database with a single command:
 
@@ -45,7 +45,7 @@ Start the API and Database with a single command:
 docker-compose up --build -d
 ```
 
-### 4️⃣ Seed the Database
+### 4️ Seed the Database
 
 Generate 100,000 mock user records to test high-volume export:
 
@@ -55,7 +55,7 @@ docker-compose exec app python seeds/seed.py
 
 ------------------------------------------------------------------------
 
-## 📡 API Endpoints
+##  API Endpoints
 
   --------------------------------------------------------------------------
   Method             Endpoint                  Description
@@ -69,7 +69,7 @@ docker-compose exec app python seeds/seed.py
 
 ------------------------------------------------------------------------
 
-## 🧪 Automated Testing
+##  Automated Testing
 
 Run the integration and unit test suite inside the container:
 
@@ -79,7 +79,7 @@ docker-compose exec app python -m pytest tests/
 
 ------------------------------------------------------------------------
 
-## 📂 Project Structure
+##  Project Structure
 
     app/        → FastAPI routes, SQLAlchemy models, and CDC services
     tests/      → Automated test suite for API and logic verification
